@@ -1,39 +1,4 @@
-body {
-    background-color: #F2E3BC;
-    margin-left: 200px;
-    font-family: "Libre Baskerville", serif;
-}
-h1{
-    font-family: "Eczar", serif;
+body{
+    font-family: "Karla", sans-serif;
     font-weight: 800;
-    font-size: 72px;
-    color: #272216;
-    border-left: #F2E3BC;
-    border-right: #F2E3BC;
-    border-top: #F2E3BC;
-    border-bottom: #272216;
-    border-style: none none dotted none;
-    border-width: 10px;
-    border-color: #272216;
 }
-
-h2{
-    position: relative;
-    margin-top: 25px;
-    position: relative;
-    text-align: right;
-}
-h3.hover{
-    background-color: #F2E3BC;
-    color: #272216;
-}
-
-h3{
-    font-family: "Libre Baskerville", serif;;
-    background-color: #68513E;
-    padding: 15px 25px;
-    color: #F2E3BC;
-    letter-spacing: 2px;
-    color: #F2E3BC;
-}
-
