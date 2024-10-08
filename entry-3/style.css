@@ -1,0 +1,186 @@
+body{
+    background-color: Tan;
+    font-family: "Zilla Slab"; serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+    background-color: #59382C;
+    color: white;
+    padding: 10px 12px;
+    text-align: center;
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    border-radius: 25px;
+}
+
+a:hover {
+    background-color: #261612;
+}
+
+.quote{
+    font-style: italic;
+}
+
+.author{
+    font-weight: bold;
+}
+
+.nodiv{
+    display: block;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+#div1{
+    position: relative;
+    top: 45px;
+    left: 120px;
+    display: inline-flex;
+}
+
+#p1{
+    position: relative;
+    padding-left: 30px;
+    padding-top: 10px;
+    width: 400px;
+}
+
+#p1quote{
+    position: relative;
+    padding-left: 45px;
+    width: 400px;
+    text-align: right;
+}
+
+#div2{
+    position: relative;
+    top: 0%;
+    left: 150px;
+    display: inline-flex;
+}
+
+#p2{
+    position: relative;
+    padding-right: 30px;
+    padding-top: 50px;
+    width: 400px;
+}
+
+#p2quote{
+    position: relative;
+    padding-right: 45px;
+    width: 400px;
+    text-align: right;
+}
+
+#div3{
+    position: relative;
+    top: -40px;
+    left: 60px;
+    display: inline-flex;
+}
+
+#p3{
+    position: relative;
+    padding-left: 30px;
+    padding-top: 50px;
+    width: 400px;
+}
+
+#p3quote{
+    position: relative;
+    padding-left: 45px;
+    width: 400px;
+    text-align: right;
+}
+
+#div4{
+    position: relative;
+    top: -90px;
+    left: 90px;
+    display: inline-flex;
+}
+
+#p4{
+    position: relative;
+    margin-right: 45px;
+    padding-top: 60px;
+    width: 450px;
+}
+
+#p4quote{
+    position: relative;
+    width: 450px;
+    text-align: right;
+}
+
+#div5{
+    position: relative;
+    top: -140px;
+    left: 60px;
+    display: inline-flex;
+}
+
+#p5{
+    position: relative;
+    margin-left: 45px;
+    padding-top: 80px;
+    width: 450px;
+}
+
+#p5quote{
+    position: relative;
+    width: 450px;
+    text-align: right;
+}
+
+#div6{
+    position: relative;
+    top: -200px;
+    left: 100px;
+    display: inline-flex;
+}
+
+#p6{
+    position: relative;
+    margin-right: 45px;
+    padding-top: 80px;
+    width: 450px;
+    font-style: italic;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+#div7{
+    position: relative;
+    top: -200px;
+    left: 60px;
+    display: inline-flex;
+}
+
+#p7{
+    position: relative;
+    margin-left: 45px;
+    padding-top: 60px;
+    width: 450px;
+}
+
+#p7quote{
+    position: relative;
+    width: 450px;
+    text-align: right;
+    margin-left: 45px;
+    font-size: larger;
+}
+
+#p7quote2{
+    position: relative;
+    width: 450px;
+    text-align: right;
+    margin-left: 45px;
+}

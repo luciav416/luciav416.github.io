@@ -40,6 +40,9 @@ a {
     border-radius: 25px;
 }
 
+#line{
+    border-bottom-width: 4px;
+}
 a:hover {
     background-color: #6C733D;
 }
@@ -65,3 +68,8 @@ h3 {
     color: #6C733D;
     margin-left: 7%;
 }
+
+strong {
+    color: #6C733D;
+}
+
