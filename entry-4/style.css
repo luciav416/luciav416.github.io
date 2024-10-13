@@ -1,0 +1,28 @@
+body{
+    background-color: Tan;
+    font-family: "Zilla Slab"; serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+    background-color: #59382C;
+    color: white;
+    padding: 10px 12px;
+    text-align: center;
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    border-radius: 25px;
+}
+
+a:hover {
+    background-color: #261612;
+}
+
+div{
+    display: inline-block;
+}

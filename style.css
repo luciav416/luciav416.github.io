@@ -1,4 +1,47 @@
 body{
     font-family: "Karla", sans-serif;
-    font-weight: 800;
+    background-color: tan;
+}
+h1{
+    font-size: 72px;
+    color: #200909;
+    margin-left: 10%;
+}
+
+#and{
+    color: darkgreen;
+}
+
+#grief{
+
+}
+
+h2{
+    position: relative;
+    text-align: right;
+    right: 5%;
+    top: -50px;
+    background-color: #c5802d;
+}
+
+a{
+    background-color: #411818;
+    color: blanchedalmond;
+    padding: 10px 12px;
+    text-align: center;
+    font-family: "Karla", sans-serif;
+    display: inline-block;
+    border-radius: 25px;
+    margin-left: 10%;
+    width: 100px;
+}
+
+div{
+    display: inline-block;
+    margin-left: 10%;
+}
+
+a:hover{
+    background-color: #190909;
+    transform: scale(150%);
 }
