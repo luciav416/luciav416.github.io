@@ -5,25 +5,7 @@ body {
     background-color:#F2F2F2;
 }
 
-h1 {
-    font-family: "Karla", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 800;
-    font-style: normal;
-    color: #202426;
-    font-size: 72px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-   
-
-}
-
-#and {
-    color: #6C733D;
-    font-size: 48px;
-    font-weight: 800;
-}
-
+/* link */
 a {
     text-decoration: none;
     background-color: #9DA65D;
@@ -40,18 +22,33 @@ a {
     border-radius: 25px;
 }
 
-#line{
-    border-bottom-width: 4px;
-}
 a:hover {
     background-color: #6C733D;
 }
 
-p {
-    margin-left: 7%;
-    width: 90%;
+/* Header */
+h1 {
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    color: #202426;
+    font-size: 72px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
+#and {
+    color: #6C733D;
+    font-size: 48px;
+    font-weight: 800;
+}
+
+#grief{
+    border-bottom-width: 4px;
+}
+
+/* Header 2 */
 h2 {
     background-color: #202426;
     padding: 15px 25px;
@@ -64,12 +61,18 @@ h2.hover {
     color: #202426;
 }
 
+/* Header 3*/
 h3 {
     color: #6C733D;
     margin-left: 7%;
 }
 
+/* Paragraph */
+p {
+    margin-left: 7%;
+    width: 90%;
+}
+
 strong {
     color: #6C733D;
 }
-

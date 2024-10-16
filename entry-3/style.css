@@ -5,6 +5,7 @@ body{
     font-style: normal;
 }
 
+/* link */
 a {
     text-decoration: none;
     background-color: #59382C;
@@ -23,6 +24,7 @@ a:hover {
     background-color: #261612;
 }
 
+/* paragraph */
 .quote{
     font-style: italic;
 }
@@ -36,6 +38,8 @@ a:hover {
     padding-top: 0px;
     padding-bottom: 0px;
 }
+
+/* Photo 1 */
 #div1{
     position: relative;
     top: 45px;
@@ -57,6 +61,7 @@ a:hover {
     text-align: right;
 }
 
+/* Photo 2 */
 #div2{
     position: relative;
     top: 10px;
@@ -78,6 +83,7 @@ a:hover {
     text-align: right;
 }
 
+/* Photo 3 */
 #div3{
     position: relative;
     top: -40px;
@@ -99,6 +105,7 @@ a:hover {
     text-align: right;
 }
 
+/* Photo 4 */
 #div4{
     position: relative;
     top: -90px;
@@ -119,6 +126,7 @@ a:hover {
     text-align: right;
 }
 
+/* Photo 5 */
 #div5{
     position: relative;
     top: -140px;
@@ -139,6 +147,7 @@ a:hover {
     text-align: right;
 }
 
+/* Photo 6 */
 #div6{
     position: relative;
     top: -200px;
@@ -163,6 +172,7 @@ a:hover {
     display: inline-flex;
 }
 
+/* Photo 7 */
 #p7{
     position: relative;
     margin-left: 45px;
