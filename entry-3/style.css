@@ -40,11 +40,11 @@ a:hover {
 }
 
 /* Photo 1 */
-#div1{
+#div1 img, .nodiv{
     position: relative;
     top: 45px;
     left: 120px;
-    display: inline-flex;
+    display: inline-block;
 }
 
 #p1{

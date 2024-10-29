@@ -1,54 +1,46 @@
-body{
-    font-family: "Karla", sans-serif;
-    background-color: #e6ccb2;
+/* header*/
+.header{
+    background-image: url(../luciav416.github.io/assets/image_26.jpg);
+    background-size: 100vw;
+    height: 100%;
+    back
 }
-
-/* Header */
+/* title */
 h1{
-    font-size: 72px;
-    color: #200909;
-    margin-left: 10%;
-    line-height: -72px;
+    font-family: "p22-zaner-pro-three", sans-serif;
+    font-size: 15vw;
+    font-variant-ligatures: contextual;
+    -moz-font-feature-settings: "calt";
+    -webkit-font-feature-settings: "calt";
+    font-feature-settings: "calt";
+    -moz-font-feature-settings: "ss01";
+    -webkit-font-feature-settings: "ss01";
+    font-feature-settings: "ss01";
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+#r{
+    -moz-font-feature-settings: "salt";
+    -webkit-font-feature-settings: "salt";
+    font-feature-settings: "salt";
 }
 
-/* & */
-h2{
-    color: darkgreen;
-    font-size: 64px;
-    margin-left: 10%;
-    line-height: -72px;
+/* entries */
+.entries{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 50px;
+    margin-top: 50px;
 }
-
-/* Subheader */
-h3{
-    position: relative;
-    text-align: right;
-    right: 0%;
-    top: -50px;
-    background-color: #c5802d;
-    padding: 5px;
-    padding-right: 3%;
-}
-
-
-a{
-    background-color: #411818;
-    color: blanchedalmond;
-    padding: 10px 12px;
-    text-align: center;
-    font-family: "Karla", sans-serif;
-    display: inline-block;
+.entries-child{
+    background-color: grey;
+    color: white;
+    padding: 1em 1em;
     border-radius: 25px;
-    margin: 25px;
-    width: 100px;
+    font-family: "p22-zaner-pro-three", sans-serif;
 }
-
-div{
-    display: inline-block;
-}
-
-a:hover{
-    background-color: #190909;
-    transform: scale(150%);
-}
-
