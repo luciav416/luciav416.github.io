@@ -1,0 +1,39 @@
+body{
+    background-color: black;
+}
+#cuadro-verde{
+    background-color: chartreuse;
+    /* height: 50vh;
+    width: 50vw; */
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#cuadro-verde:hover{
+    flex-wrap: wrap-reverse;
+    transition:10s ease-in-out;
+}
+#cuadro-lila{
+    background-color: darkorchid;
+    height: 50%;
+    width: 50%;
+}
+#cuadro-aguamarina{
+    background-color: aquamarine;
+    height: 50%;
+    width: 50%;
+}
+#cuadro-rosa{
+    background-color: deeppink;
+    height: 50%;
+    width: 50%;
+}
+#cuadro-gris{
+    background-color: dimgray;
+    height: 50%;
+    width: 50%;
+}
