@@ -1,15 +1,50 @@
-body{
-    background-image: url(../luciav416.github.io/assets/image_26.jpg);
-    background-size: 100vw;
+html{
+    font-size: 16px;
 }
-/* header*/
-.header{
 
+body{
+    background-color: black;
+    background-image: url(../luciav416.github.io/assets/Imagen_rio-magdalena.jpg);
+    background-origin: border-box;
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
 }
-/* title */
+
+.banner{
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: black;
+    text-align: end;
+    position: fixed;
+    top: 0;
+}
+
+#author{
+    margin-right: 24px;
+    font-family: "old-claude-lp-expert", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: whitesmoke;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    width: 1400px;
+    margin-top: 120px;
+}
+
 h1{
     font-family: "p22-zaner-pro-three", sans-serif;
-    font-size: 15vw;
     font-variant-ligatures: contextual;
     -moz-font-feature-settings: "calt";
     -webkit-font-feature-settings: "calt";
@@ -17,41 +52,48 @@ h1{
     -moz-font-feature-settings: "ss01";
     -webkit-font-feature-settings: "ss01";
     font-feature-settings: "ss01";
+    font-size: 14rem;
     color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin: 0;
+    text-align: center;
 }
 #r{
     -moz-font-feature-settings: "salt";
     -webkit-font-feature-settings: "salt";
     font-feature-settings: "salt";
 }
-h2{
-    display: flex;
-    justify-content: flex-end;
-    color: white;
-    font-size: 72px;
-    margin: 0;
-    background-color: black;
-    padding-right: 1.5rem;
-}
 
-/* entries */
 .entries{
     display: flex;
-    flex-direction: row;
+    width: 1400px;
     flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 50px;
-    margin-top: 50px;
+    justify-content: center;
+    gap: 30px;
+
 }
-.entries-child{
-    background-color: rgb(43, 39, 39);
-    color: white;
-    padding: 25px;
-    border-radius: 25px;
-    font-size: 45px;
-    margin: 0;
+
+a{
+    width: 415px;
+    height: auto;
+    font-family: "warnock-pro-caption", serif;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 45px;
+    box-shadow: 2px 2px 5px rgba(56, 56, 56, 0.3);
+    transition: "background-color" 0.3s ease;
+    background-color: black;
+    color: whitesmoke;
+    text-transform: capitalize;
+    padding-top: 8px;
+}
+
+a:hover{
+    background-color: #F2F2F2;
+    color: black;
+    transition-duration: 1.2s;
+    transition-timing-function: linear;
 }
