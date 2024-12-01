@@ -1,99 +1,201 @@
-html{
-    font-size: 16px;
+html,
+body {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    /* https://fonts.adobe.com/fonts/old-claude-lp */
+    font-family: "old-claude-lp-regular", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
-body{
-    background-color: black;
-    background-image: url(../luciav416.github.io/assets/Imagen_rio-magdalena.jpg);
-    background-origin: border-box;
+* {
+    margin: 0;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    width: 98vw;
+}
+
+#full-header {
+    background-color: grey;
+    background-image: url(./assets/Imagen_rio-magdalena.jpg);
     background-size: cover;
-    background-position-x: center;
-    background-repeat: no-repeat;
-}
-
-.banner{
-    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     width: 100%;
-    box-sizing: border-box;
-    background-color: black;
-    text-align: end;
-    position: fixed;
-    top: 0;
+    color: white;
 }
 
-#author{
-    margin-right: 24px;
-    font-family: "old-claude-lp-expert", sans-serif;
+#shrink-header {
+    background-color: grey;
+    background-image: url(./assets/Imagen_rio-magdalena.jpg);
+    background-size: cover;
+    background-position: 0;
+
+}
+
+h1 {
+    /* https://fonts.adobe.com/fonts/p22-zaner */
+    font-family: p22-zaner-pro-three, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    /* Variaciones */
+    font-variant-ligatures: common-ligatures;
+    -moz-font-feature-settings: "liga", "clig";
+    -webkit-font-feature-settings: "liga", "clig";
+    font-feature-settings: "liga", "clig";
+    /* Estilo */
+    /* font-size: 14rem; */
+    font-size: 6rem;
+    text-align: center;
+}
+
+#scroll-text {
+    /* https://fonts.adobe.com/fonts/old-claude-lp */
+    font-family: old-claude-lp-expert, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    position: absolute;
+    bottom: 20px;
+    animation: fade-in-out 5s infinite;
+    font-size: 1.2rem;
+}
+
+@keyframes fade-in-out {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+#hide-scroll {}
+
+main {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin: 50px;
+}
+
+#text-information {
+    width: 360px;
+}
+
+#entries {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.entry-box {
+    transition: 0.4s;
+}
+
+h2 {
+    font-family: "charcuterie-deco", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 1.5rem;
-    color: whitesmoke;
+    transition: 0.4s;
 }
 
-.content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.header{
-    display: flex;
-    justify-content: center;
-    width: 1400px;
-    margin-top: 120px;
-}
-
-h1{
-    font-family: "p22-zaner-pro-three", sans-serif;
-    font-variant-ligatures: contextual;
-    -moz-font-feature-settings: "calt";
-    -webkit-font-feature-settings: "calt";
-    font-feature-settings: "calt";
-    -moz-font-feature-settings: "ss01";
-    -webkit-font-feature-settings: "ss01";
-    font-feature-settings: "ss01";
-    font-size: 14rem;
-    color: white;
-    margin: 0;
-    text-align: center;
-}
-#r{
-    -moz-font-feature-settings: "salt";
-    -webkit-font-feature-settings: "salt";
-    font-feature-settings: "salt";
-}
-
-.entries{
-    display: flex;
-    width: 1400px;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-
-}
-
-a{
-    width: 415px;
-    height: auto;
-    font-family: "warnock-pro-caption", serif;
+.entry-box:hover h2 {
+    letter-spacing: 3px;
     font-size: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 45px;
-    box-shadow: 2px 2px 5px rgba(56, 56, 56, 0.3);
-    transition: "background-color" 0.3s ease;
-    background-color: black;
-    color: whitesmoke;
-    text-transform: capitalize;
-    padding-top: 8px;
 }
 
-a:hover{
-    background-color: #F2F2F2;
-    color: black;
-    transition-duration: 1.2s;
-    transition-timing-function: linear;
+.entries-links {
+    width: 800px;
+    height: 100px;
+    position: relative;
+    transition: 0.4s;
+    position: relative;
+    overflow: visible;
+    background-color: gainsboro;
+    padding: 10px;
+}
+
+.entry-box:hover .entries-links {
+    height: 150px;
+}
+
+.entries-links::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    border-top: 2px solid grey;
+    border-left: 2px solid grey;
+    transition: all 0.4s ease;
+}
+
+.entries-links:hover::before {
+    width: 100%;
+    height: 100%;
+}
+
+.entries-links::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 15px;
+    height: 15px;
+    border-bottom: 2px solid grey;
+    border-right: 2px solid grey;
+    transition: all 0.4s ease;
+}
+
+.entries-links:hover::after {
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    display: block;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.entry-box:hover a {}
+
+
+.entry-a {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    transition: 0.4s;
+}
+
+.entry-b {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    transition: 0.4s;
+}
+
+footer {
+    height: 50px;
+    background-color: grey;
+    display: flex;
+    align-items: center;
+}
+
+#my-name {
+    margin-left: 15px;
 }
