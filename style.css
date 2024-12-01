@@ -31,14 +31,21 @@ body {
     height: 100vh;
     width: 100%;
     color: white;
+    transition: 0.5s ease-in-out;
 }
 
 #shrink-header {
     background-color: grey;
     background-image: url(./assets/Imagen_rio-magdalena.jpg);
     background-size: cover;
-    background-position: 0;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    width: 100%;
+    color: white;
+    transition: 1s;
 }
 
 h1 {
@@ -52,8 +59,7 @@ h1 {
     -webkit-font-feature-settings: "liga", "clig";
     font-feature-settings: "liga", "clig";
     /* Estilo */
-    /* font-size: 14rem; */
-    font-size: 6rem;
+    font-size: 14rem;
     text-align: center;
 }
 
