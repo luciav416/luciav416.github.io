@@ -17,13 +17,14 @@ body {
 #container {
     display: flex;
     flex-direction: column;
-    width: 98vw;
+    width: 100vw;
 }
 
-#full-header {
-    background-color: grey;
+#header {
     background-image: url(./assets/Imagen_rio-magdalena.jpg);
     background-size: cover;
+    background-color: black;
+    background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -31,24 +32,11 @@ body {
     height: 100vh;
     width: 100%;
     color: white;
-    transition: 0.5s ease-in-out;
+    transition: 1s ease;
+    z-index: 1;
 }
 
-#shrink-header {
-    background-color: grey;
-    background-image: url(./assets/Imagen_rio-magdalena.jpg);
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 20vh;
-    width: 100%;
-    color: white;
-    transition: 1s;
-}
-
-h1 {
+#header-text {
     /* https://fonts.adobe.com/fonts/p22-zaner */
     font-family: p22-zaner-pro-three, sans-serif;
     font-style: normal;
@@ -61,6 +49,7 @@ h1 {
     /* Estilo */
     font-size: 14rem;
     text-align: center;
+    transition: 1s ease;
 }
 
 #scroll-text {
@@ -69,9 +58,10 @@ h1 {
     font-style: normal;
     font-weight: 400;
     position: absolute;
-    bottom: 20px;
+    bottom: 30px;
     animation: fade-in-out 5s infinite;
     font-size: 1.2rem;
+    color: black;
 }
 
 @keyframes fade-in-out {
@@ -85,8 +75,6 @@ h1 {
         opacity: 1;
     }
 }
-
-#hide-scroll {}
 
 main {
     display: flex;
@@ -103,6 +91,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    width: 800px;
 }
 
 .entry-box {
@@ -123,7 +112,6 @@ h2 {
 }
 
 .entries-links {
-    width: 800px;
     height: 100px;
     position: relative;
     transition: 0.4s;
@@ -131,6 +119,7 @@ h2 {
     overflow: visible;
     background-color: gainsboro;
     padding: 10px;
+    border: 2px;
 }
 
 .entry-box:hover .entries-links {
@@ -140,8 +129,8 @@ h2 {
 .entries-links::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -2px;
+    left: -2px;
     width: 15px;
     height: 15px;
     border-top: 2px solid grey;
@@ -157,18 +146,13 @@ h2 {
 .entries-links::after {
     content: '';
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: -2px;
+    right: -2px;
     width: 15px;
     height: 15px;
     border-bottom: 2px solid grey;
     border-right: 2px solid grey;
     transition: all 0.4s ease;
-}
-
-.entries-links:hover::after {
-    width: 100%;
-    height: 100%;
 }
 
 a {
@@ -178,7 +162,9 @@ a {
     transition: 0.4s;
 }
 
-.entry-box:hover a {}
+a:hover {
+    letter-spacing: 2px;
+}
 
 
 .entry-a {
@@ -204,4 +190,52 @@ footer {
 
 #my-name {
     margin-left: 15px;
+}
+
+@media screen and (max-width:1024px) {
+    #header-text{
+        font-size: 10rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+    #header {
+        height: 20vh;
+    }
+
+    #header-text {
+        font-size: 6rem;
+    }
+
+    #scroll-text {
+        display: none;
+    }
+
+    main {
+        flex-wrap: wrap;
+    }
+
+    #text-information {
+        width: 650px;
+    }
+}
+
+
+
+@media screen and (max-width: 425px) {
+    #header {
+        height: 20vh;
+    }
+
+    #header-text {
+        font-size: 3rem;
+    }
+
+    #scroll-text {
+        display: none;
+    }
+
+    main {
+        flex-wrap: wrap;
+    }
 }
