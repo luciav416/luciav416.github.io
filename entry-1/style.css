@@ -1,0 +1,69 @@
+html,
+body {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    /* https://fonts.adobe.com/fonts/old-claude-lp */
+    font-family: "old-claude-lp-regular", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: cyan;
+}
+
+* {
+    margin: 0;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    align-items: center;
+}
+
+header {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+}
+
+.header-text {
+    margin-left: 25px;
+    margin-right: 25px;
+    font-family: charcuterie-deco, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: 0.4s ease;
+}
+
+a:hover {
+    letter-spacing: 5px;
+    color: #f5cb5c;
+}
+
+main {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+}
+
+section {
+    border-radius: 30px;
+    padding: 20px;
+    background-color: #ced4da;
+    color: black;
+}

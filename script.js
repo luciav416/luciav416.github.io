@@ -7,14 +7,14 @@ const entries = document.getElementById("entries")
 window.onscroll = function () { scrollFunction() };
 function scrollFunction() {
     if (window.innerWidth > 768) {
-        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
             header.style.height = "200px"
-            /* header.style.position = "fixed" */
+            header.style.position = "fixed"
             headerText.style.fontSize = "8rem"
             headerText.style.paddingTop = "25px"
             scrollText.style.display = "none"
-            /* textInformation.style.paddingTop = "200px"
-            entries.style.paddingTop = "200px" */
+            textInformation.style.paddingTop = "200px"
+            entries.style.paddingTop = "200px"
         } else {
             /* header.style.height = "100vh"
             header.style.position = "relative"
