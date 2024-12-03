@@ -8,7 +8,7 @@ body {
     font-family: "old-claude-lp-regular", sans-serif;
     font-weight: 400;
     font-style: normal;
-    background-color: black;
+    background-color: #001845;
     color: white;
 }
 
@@ -36,7 +36,7 @@ h2 {
 }
 
 header {
-    background-color: black;
+    background-color: #001845;
     color: white;
     display: flex;
     justify-content: space-between;

@@ -29,6 +29,7 @@ body {
     color: white;
     height: 60px;
     border-bottom: #bb6b00 2px dotted;
+    z-index: 1;
 }
 
 #author {
@@ -75,8 +76,7 @@ a:hover {
 
 .main-menu:hover {
     padding-top: 5px;
-    text-decoration: underline;
-
+    font-size: 1.6rem;
 }
 
 .content {

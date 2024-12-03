@@ -37,7 +37,7 @@ function translateRandomWord() {
         setTimeout(() => {
             wordElement.innerHTML = poemWordsEnglish[randomIndex];
             wordElement.style.filter = "blur(0px)"; 
-      }, 50); 
+      }, 5); 
     }
   }
   
