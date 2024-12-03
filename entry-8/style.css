@@ -1,7 +1,102 @@
 body {
-    background-image: url(../assets/backgrounds/Wallpaper_02.jpg);
-    background-repeat: no-repeat;
-    background-position: right top;
-    background-attachment: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    /* https://fonts.adobe.com/fonts/old-claude-lp */
+    font-family: "old-claude-lp-regular", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: black;
+    color: white;
 }
 
+
+h1 {
+    margin: 0;
+    text-align: center;
+    font-family: fleur, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 5rem;
+    color: white;
+    padding-top: 100px;
+
+}
+
+h2 {
+    font-family: charcuterie-etched, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 3rem;
+    margin: 0px;
+    text-align: center;
+}
+
+header {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    border-bottom: #ced4da 2px dotted;
+    top: 0;
+}
+
+.header-text {
+    margin-left: 25px;
+    margin-right: 25px;
+    font-family: charcuterie-deco, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: 0.4s ease;
+}
+
+a:hover {
+    letter-spacing: 5px;
+    color: #f5cb5c;
+}
+
+h3 {
+    font-family: old-man-eloquent, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    height: auto;
+    width: 540px;
+    font-family: old-claude-lp-regular, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    justify-content: center;
+
+}
+
+p{
+    transition: 0.4s ease;
+}
