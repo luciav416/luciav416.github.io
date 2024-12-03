@@ -56,7 +56,7 @@ a:hover {
 }
 
 main {
-    width: 600px;
+    width: 800px;
     display: flex;
     flex-direction: column;
 }

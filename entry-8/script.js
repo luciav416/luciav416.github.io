@@ -33,13 +33,14 @@ function translateRandomWord() {
     if (wordElement.innerHTML !== poemWordsEnglish[randomIndex]) {
         wordElement.style.transition = "filter 0.5s";
         wordElement.style.filter = "blur(4px)";
+        wordElement.style.color = "#b9faf8"
 
         setTimeout(() => {
             wordElement.innerHTML = poemWordsEnglish[randomIndex];
             wordElement.style.filter = "blur(0px)"; 
-      }, 5); 
+      }, 200); 
     }
   }
   
-  setInterval(translateRandomWord, 1000);
+  setInterval(translateRandomWord, 100);
   

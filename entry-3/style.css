@@ -154,3 +154,7 @@ img {
     max-height: 340px;
     transition: 0.4s ease;
 }
+
+#last-image{
+    padding-bottom: 120px;
+}
