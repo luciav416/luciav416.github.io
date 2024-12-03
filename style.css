@@ -87,6 +87,7 @@ main {
 #text-information {
     width: 360px;
     color: white;
+    padding-top: 300px;
 }
 
 #entries {
@@ -94,6 +95,7 @@ main {
     flex-direction: column;
     gap: 30px;
     width: 800px;
+    padding-top: 300px;
 }
 
 .entry-box {
