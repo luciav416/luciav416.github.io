@@ -90,6 +90,10 @@ main {
     padding-top: 300px;
 }
 
+p {
+    margin-bottom: 15px;
+}
+
 #entries {
     display: flex;
     flex-direction: column;
@@ -211,7 +215,7 @@ footer {
     color: white;
 }
 
-#class-name{
+#class-name {
     color: white;
     margin-right: 25px;
 }
