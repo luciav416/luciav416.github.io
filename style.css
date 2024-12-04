@@ -62,7 +62,7 @@ body {
     bottom: 30px;
     animation: fade-in-out 5s infinite;
     font-size: 1.2rem;
-    color: black;
+    color: white;
 }
 
 @keyframes fade-in-out {

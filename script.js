@@ -7,7 +7,7 @@ const entries = document.getElementById("entries")
 window.onscroll = function () { scrollFunction() };
 function scrollFunction() {
     if (window.innerWidth > 768) {
-        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;  
+        const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;  
         if (scrollTop > 50 ) {
             header.style.height = "200px";
             header.style.position = "fixed";
