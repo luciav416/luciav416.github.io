@@ -4,16 +4,9 @@ body {
     justify-content: center;
     margin: 0;
     padding: 0;
-    /* https://fonts.adobe.com/fonts/old-claude-lp */
     font-family: "old-claude-lp-regular", sans-serif;
-    font-weight: 400;
-    font-style: normal;
     background-color: black;
 }
-
-/* * {
-    margin: 0;
-} */
 
 #container {
     display: flex;
@@ -26,22 +19,19 @@ header {
     background-color: black;
     color: white;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     height: 60px;
     align-items: center;
-    position: fixed;
+    position: sticky;
+    top: 0;
     width: 100vw;
-    border-bottom: #ced4da 2px dotted;
+    border-bottom: lightgrey 4px dotted;
 }
 
 .header-text {
-    margin-left: 25px;
-    margin-right: 25px;
-    font-family: charcuterie-deco, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    letter-spacing: 2px;
-    font-size: 1.5rem;
+    margin: 25px;
+    font-family: "old-claude-lp-expert", sans-serif;
+    font-size: 1.3rem;
 }
 
 a {
@@ -51,8 +41,16 @@ a {
 }
 
 a:hover {
-    letter-spacing: 5px;
-    color: #f5cb5c;
+    letter-spacing: 2px;
+    color: lightgrey;
+}
+
+#main-page {
+    font-size: 2rem;
+    color: white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 main {
@@ -65,49 +63,82 @@ h1 {
     color: white;
     font-size: 8rem;
     width: 1200px;
-    padding: 100px 0px 30px 0px;
     align-self: center;
     text-align: center;
-    font-family: "fleur", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    margin: 0;
-    letter-spacing: 1px;
+    font-family: "fleur-display", sans-serif;
+    font-weight: normal;
+    margin: 30px 0;
+    letter-spacing: 2.5px;
 }
 
 section {
+    margin: 20px 0;
     border-radius: 30px;
-    padding: 20px;
-    background-color: #ced4da;
+    background-color: lightgray;
     color: black;
-    margin-bottom: 40px;
+    padding: 10px 22px;
+}
+
+#first-section {
+    margin-top: 0px;
 }
 
 h2 {
-    font-family: "charcuterie-etched", sans-serif;
-    font-weight: 400;
-    font-style: normal;
     font-size: 2.5rem;
-    margin-top: 0;
-    line-height: 35px;
-    margin-bottom: 15px;
+    margin: 0 0 8px 0;
+    text-align: center;
+    border-bottom: double 2px;
 }
 
 h3 {
-    font-family: "charcuterie-engraved", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 2rem;
-    margin-top: 8px;
-    line-height: 35px;
-    margin-bottom: 16px;
+    font-family: "old-claude-lp-expert", sans-serif;
+    font-size: 1.4rem;
+    margin: 0 0 0.3rem;
+}
+
+#first-h3{
+    margin-top: 0rem;
 }
 
 h4 {
-    font-family: "charcuterie-flared", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    margin: 0 0 0.1rem;
+}
+
+p {
+    margin: 0 0 0.8rem;
+}
+
+#first-paragraph{
+    margin-top: 0.6rem;
+}
+
+ol, ul{
+    margin: 0 0 0.8rem 0;
+}
+
+footer {
+    height: 50px;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: dotted white;
+    margin-top: 30px;
+}
+
+#my-name {
+    margin: 25px;
+    color: white;
+}
+
+#class-name {
+    color: white;
+    margin: 25px;
+}
+
+#entry-name {
+    color: white;
+    margin: 25px;
 }

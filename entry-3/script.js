@@ -1,4 +1,4 @@
-let imgs = document.querySelectorAll("img");
+/* let imgs = document.querySelectorAll("img");
 
 function applyRandomRotation(){
     imgs.forEach(function(element){
@@ -7,4 +7,4 @@ function applyRandomRotation(){
     });
 }
 
-setInterval(applyRandomRotation, 200); 
+setInterval(applyRandomRotation, 200);  */
