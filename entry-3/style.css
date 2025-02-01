@@ -26,7 +26,7 @@ header {
     top: 0;
     width: 100vw;
     border-bottom: white 4px dotted;
-    z-index: 1;
+    z-index: 2;
 }
 
 .header-text {
@@ -100,15 +100,31 @@ footer {
     margin: 25px;
 }
 
-#image{
-    width: 1400px;
-    height: 1200px;
-    background-color: aliceblue;
-    position: relative;
+h2{
+    color: white;
+    font-family: "old-claude-lp-expert", sans-serif;
+    font-size: 4rem;
+    text-align: center;
+    margin: 0;
 }
 
-#background-house{
-    background-color: #C19A6B;
+h3{
+   color: white;
+    font-family: "old-claude-lp-expert", sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0;
+}
+
+#image {
+    width: 1400px;
+    height: 1200px;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+#background-house {
+    background-color: #432818;
     width: 1064px;
     height: 533px;
     position: absolute;
@@ -116,35 +132,29 @@ footer {
     bottom: 0px;
 }
 
-#background-house-entrance{
-    background-color: #91734f;
-    width: 364px;
-    height: 626px;
+#roof-1 {
+    width: 0;
+    height: 0;
+    border-bottom: 200px solid #6f1d1b;
+    border-left: 150px solid transparent;
     position: absolute;
-    left: 518px;
-    bottom: 0px;
-}
-
-/* #roof-1{
-    background-color: #af4e35;
-    width: 300px;
-    height: 200px;
-    position: absolute;
+    top: 467px;
     left: 168px;
-    top: 467px;
 }
 
-#roof-2{
-    background-color: #af4e35;
-    width: 300px;
-    height: 200px;
-    position: absolute;
-    left: 932px;
-    top: 467px;
-} */
 
-#roof-center{
-    background-color: #af4e35;
+#roof-2 {
+    width: 0;
+    height: 0;
+    border-bottom: 200px solid #6f1d1b;
+    border-right: 150px solid transparent;
+    position: absolute;
+    top: 467px;
+    right: 169px;
+}
+
+#roof-center {
+    background-color: #6f1d1b;
     width: 764px;
     height: 200px;
     position: absolute;
@@ -152,219 +162,263 @@ footer {
     top: 467px;
 }
 
-.window{
-    background-color: #eeda23;
-    width: 50px;
-    height: 75px;
-    
+#chimney {
+    background-color: #6f1d1b;
+    width: 65px;
+    height: 85px;
+    position: absolute;
+    top: 382px;
+    left: 382px;
 }
 
-#w1{
+#cloud-1 {
+    background-color: #8a7968;
+    height: 80px;
+    width: 150px;
+    position: absolute;
+    top: 272px;
+    left: 382px;
+    border-radius: 100%;
+}
+
+#cloud-2 {
+    background-color: #8a7968;
+    height: 120px;
+    width: 200px;
+    position: absolute;
+    top: 192px;
+    left: 457px;
+    border-radius: 100%;
+}
+
+#cloud-3 {
+    background-color: #8a7968;
+    height: 80px;
+    width: 150px;
+    position: absolute;
+    top: 172px;
+    left: 582px;
+    border-radius: 100%;
+}
+
+.window {
+    background-color: #ffb20f;
+    width: 50px;
+    height: 75px;
+
+}
+
+.line-1 {
     position: absolute;
     top: 700px;
+}
+
+.line-2 {
+    position: absolute;
+    top: 785px;
+}
+
+.line-3 {
+    position: absolute;
+    top: 920px;
+}
+
+.line-4 {
+    position: absolute;
+    top: 1005px;
+}
+
+.column-1 {
+    position: absolute;
     left: 218px;
 }
 
-#w2{
+.column-2 {
     position: absolute;
-    top: px;
-    left: px;
+    left: 278px;
 }
 
-#w3{
+.column-3 {
     position: absolute;
-    top: px;
-    left: px;
+    left: 358px;
 }
 
-#w4{
+.column-4 {
     position: absolute;
-    top: px;
-    left: px;
+    left: 418px;
 }
 
-#w5{
+.column-5 {
     position: absolute;
-    top: px;
-    left: px;
-}
-#w6{
-    position: absolute;
-    top: px;
-    left: px;
-}
-#w7{
-    position: absolute;
-    top: px;
-    left: px;
-}
-#w8{
-    position: absolute;
-    top: px;
-    left: px;
-}
-#w{
-    position: absolute;
-    top: px;
-    left: px;
-}
-/* html,
-body {
-    font-size: 16px;
-    margin: 0;
-    padding: 0;
-    justify-content: center;
-    https://fonts.adobe.com/fonts/old-claude-lp
-    font-family: "old-claude-lp-regular", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    background-color: #210f04;
+    left: 932px;
 }
 
-body {
-    margin: 0;
-    padding: 0;
+.column-6 {
+    position: absolute;
+    left: 992px;
 }
 
-.banner {
-    display: flex;
-    background-color: #260101;
-    position: fixed;
-    top: 0;
-    width: 100vw;
-    justify-content: space-between;
-    box-sizing: border-box;
-    border: 5px;
-    align-items: center;
+.column-7 {
+    position: absolute;
+    left: 1072px;
+}
+
+.column-8 {
+    position: absolute;
+    left: 1132px;
+}
+
+#background-house-entrance {
+    background-color: #99582a;
+    width: 364px;
+    height: 626px;
+    position: absolute;
+    left: 518px;
+    bottom: 0px;
+}
+
+#top-house-entrance {
+    width: 0;
+    height: 0;
+    border-bottom: 173px solid #99582a;
+    border-left: 182px solid transparent;
+    border-right: 182px solid transparent;
+    position: absolute;
+    top: 401px;
+    left: 518px;
+}
+
+#circle-window {
+    width: 125px;
+    height: 125px;
+    background: #ffb20f;
+    border-radius: 50%;
+    position: absolute;
+    top: 512px;
+    left: 637.5px;
+}
+#window-bar-1{
+    height: 15px;
+    width: 200px;
+    position: absolute;
+    top: 567px;
+    left: 600px;
+    background-color: #99582a;
+}
+
+#window-bar-2{
+    width: 15px;
+    height: 200px;
+    position: absolute;
+    top: 474.5px;
+    left: 692.5px;
+    background-color: #99582a;
+}
+
+.small-window{
+    width: 30px;
+    height: 50px;
+    background-color: #ffb20f;
+}
+
+.sw-l1{
+    position: absolute;
+    top: 742px;
+}
+
+.sw-l2{
+    position: absolute;
+    top: 800px;
+}
+
+.sw-c1{
+    position: absolute;
+    left: 568px;
+}
+
+.sw-c2{
+    position: absolute;
+    left: 606px;
+}
+
+.sw-c3{
+    position: absolute;
+    left: 666px;
+}
+
+.sw-c4{
+    position: absolute;
+    left: 704px;
+}
+
+.sw-c5{
+    position: absolute;
+    left: 764px;
+}
+
+.sw-c6{
+    position: absolute;
+    left: 802px;
+}
+
+#top-door{
+    background-color: #400406;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 910px;
+    left: 650px;
+    border-radius: 50%;
+}
+
+#door{
+    background-color: #400406;
+    width: 100px;
+    height: 180px;
+    position: absolute;
+    top: 960px;
+    left: 650px;
+}
+
+#door-knob{
+    background-color: #ffe6a7;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 1045px;
+    left: 735px;
+    border-radius: 50%;
+}
+
+#stair-1{
+    background-color: #bb9457;
+    width: 140px;
+    height: 20px;
+    position: absolute;
+    top: 1140px;
+    left: 629px;
+}
+
+#stair-2{
+    background-color: #bb9457;
+    width: 180px;
+    height: 20px;
+    position: absolute;
+    top: 1160px;
+    left: 609px;
+}
+
+#stair-3{
+    background-color: #bb9457;
+    width: 220px;
+    height: 20px;
+    position: absolute;
+    top: 1180px;
+    left: 589px;
+}
+
+#text{
     color: white;
-    height: 60px;
-    border-bottom: #bb6b00 2px dotted;
-    z-index: 1;
+    text-align: left;
 }
 
-#author {
-    margin-left: 25px;
-    margin-right: 25px;
-    font-family: charcuterie-deco, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    letter-spacing: 2px;
-    font-size: 1.5rem;
-}
-
-#author:hover {
-    font-family: charcuterie-deco, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    text-decoration: none;
-    color: white;
-    transition: 0.4s ease;
-}
-
-a{
-    font-family: charcuterie-deco, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    text-decoration: none;
-    color: white;
-    transition: 0.4s ease;
-}
-a:hover {
-    letter-spacing: 5px;
-    color: #f5cb5c;
-}
-
-.main-menu {
-    margin-left: 25px;
-    margin-right: 25px;
-    font-family: charcuterie-deco, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    letter-spacing: 2px;
-    font-size: 1.5rem;
-}
-
-.main-menu:hover {
-    padding-top: 5px;
-    font-size: 1.6rem;
-}
-
-.content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 60px;
-}
-
-.header {}
-
-#title {
-    font-family: fleur, sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 5rem;
-    color: white;
-    width: 1200px;
-    padding-top: 100px;
-}
-
-h1 {
-    margin: 0;
-    text-align: center;
-
-}
-
-h2 {
-    font-family: charcuterie-etched, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: white;
-    font-size: 3rem;
-    margin: 0px;
-    text-align: center;
-}
-
-h3 {
-    font-family: old-man-eloquent, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    color: white;
-    text-align: center;
-    margin: 0;
-}
-
-#container {
-    width: 1200px;
-    font-family: warnock-pro-caption, serif;
-    font-weight: 400;
-    font-style: normal;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
-    gap: 20px;
-}
-
-.text-and-image {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-}
-
-.text {
-    height: auto;
-    width: 540px;
-    font-family: old-claude-lp-regular, sans-serif;
-font-weight: 400;
-font-style: normal;
-}
-
-img {
-    max-height: 340px;
-    transition: 0.4s ease;
-}
-
-#last-image{
-    padding-bottom: 120px;
-} */
