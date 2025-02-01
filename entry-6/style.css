@@ -5,7 +5,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: "old-claude-lp-regular", sans-serif;
-    background-color: darkred;
+    background-color: fuchsia;
 }
 
 #container {
@@ -16,7 +16,7 @@ body {
 }
 
 header {
-    background-color: darkred;
+    background-color: fuchsia;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -25,7 +25,7 @@ header {
     position: sticky;
     top: 0;
     width: 100vw;
-    border-bottom: white 4px dotted;
+    border-bottom: black 4px dotted;
     z-index: 2;
 }
 
@@ -37,7 +37,7 @@ header {
 
 a {
     text-decoration: none;
-    color: white;
+    color: black;
     transition: 0.4s ease;
 }
 
@@ -48,7 +48,7 @@ a:hover {
 
 #main-page {
     font-size: 2rem;
-    color: white;
+    color: black;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -63,7 +63,7 @@ main {
 }
 
 h1 {
-    color: white;
+    color: black;
     font-size: 8rem;
     width: 1200px;
     align-self: center;
@@ -77,31 +77,31 @@ h1 {
 footer {
     height: 50px;
     width: 100vw;
-    background-color: darkred;
+    background-color: fuchsia;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-top: dotted white;
+    border-top: dotted black;
     margin-top: 30px;
 }
 
 #my-name {
     margin: 25px;
-    color: white;
+    color: black;
 }
 
 #class-name {
-    color: white;
+    color: black;
     margin: 25px;
 }
 
 #entry-name {
-    color: white;
+    color: black;
     margin: 25px;
 }
 
 h2{
-    color: white;
+    color: black;
     font-family: "old-claude-lp-expert", sans-serif;
     font-size: 4.5rem;
     text-align: center;
@@ -109,7 +109,7 @@ h2{
 }
 
 h3{
-   color: white;
+   color: black;
     font-family: "old-claude-lp-expert", sans-serif;
     font-size: 2rem;
     text-align: center;
@@ -117,7 +117,7 @@ h3{
 }
 
 #text{
-    color: white;
+    color: black;
     text-align: left;
     width: 800px;
 }
