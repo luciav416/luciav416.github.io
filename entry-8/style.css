@@ -1,61 +1,38 @@
+html,
 body {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     margin: 0;
     padding: 0;
-    /* https://fonts.adobe.com/fonts/old-claude-lp */
     font-family: "old-claude-lp-regular", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    background-color: #001845;
-    color: white;
+    background-color: darkred;
 }
 
-
-h1 {
-    margin: 0;
-    text-align: center;
-    font-family: fleur, sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 11rem;
-    color: white;
-    padding-top: 100px;
-
-}
-
-h2 {
-    font-family: charcuterie-etched, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: white;
-    font-size: 4rem;
-    margin: 0px;
-    text-align: center;
+#container {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    align-items: center;
 }
 
 header {
-    background-color: #001845;
+    background-color: darkred;
     color: white;
     display: flex;
     justify-content: space-between;
     height: 60px;
     align-items: center;
-    position: fixed;
-    width: 100vw;
-    border-bottom: #ced4da 2px dotted;
+    position: sticky;
     top: 0;
+    width: 100vw;
+    border-bottom: white 4px dotted;
+    z-index: 2;
 }
 
 .header-text {
-    margin-left: 25px;
-    margin-right: 25px;
-    font-family: charcuterie-deco, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    letter-spacing: 2px;
-    font-size: 1.5rem;
+    margin: 25px;
+    font-family: "old-claude-lp-expert", sans-serif;
+    font-size: 1.3rem;
 }
 
 a {
@@ -65,39 +42,82 @@ a {
 }
 
 a:hover {
-    letter-spacing: 5px;
-    color: #f5cb5c;
+    letter-spacing: 2px;
+    color: lightgrey;
 }
 
-h3 {
-    font-family: old-man-eloquent, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    color: white;
-    text-align: center;
-    margin: 0;
+#main-page {
     font-size: 2rem;
+    color: white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-#content {
+main {
+    width: 1200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-main {
-    display: flex;
-    height: auto;
-    width: 540px;
-    font-family: old-claude-lp-regular, sans-serif;
-    font-weight: 400;
-    font-style: normal;
+h1 {
+    color: white;
+    font-size: 8rem;
+    width: 1200px;
+    align-self: center;
     text-align: center;
-    justify-content: center;
-
+    font-family: "fleur-display", sans-serif;
+    font-weight: normal;
+    margin: 30px 0;
+    letter-spacing: 2.5px;
 }
 
-p{
-    transition: 0.4s ease;
+footer {
+    height: 50px;
+    width: 100vw;
+    background-color: darkred;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: dotted white;
+    margin-top: 30px;
+}
+
+#my-name {
+    margin: 25px;
+    color: white;
+}
+
+#class-name {
+    color: white;
+    margin: 25px;
+}
+
+#entry-name {
+    color: white;
+    margin: 25px;
+}
+
+h2{
+    color: white;
+    font-family: "old-claude-lp-expert", sans-serif;
+    font-size: 4.5rem;
+    text-align: center;
+    margin: 0;
+}
+
+h3{
+   color: white;
+    font-family: "old-claude-lp-expert", sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0;
+}
+
+#text{
+    color: white;
+    text-align: left;
+    width: 800px;
 }

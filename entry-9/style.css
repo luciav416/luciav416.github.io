@@ -1,57 +1,123 @@
-.eb-garamond-<uniquifier> {
-    font-family: "EB Garamond", serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
-  }
-
-  body {
-    font-family: "EB Garamond", sans-serif;
-   
-}
-
-.content {
-    max-width: 800px;
-}
-
-.photo-right{
+html,
+body {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    font-family: "old-claude-lp-regular", sans-serif;
+    background-color: darkred;
 }
 
-.text {
-    display: block;
-    max-width: 380px;
+#container {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    align-items: center;
 }
 
-p{
-    font-family: "EB Garamond";
-}
-
-.heart {
-    position: relative;
-    width: 100px;
-    height: 90px;
-  }
-  .heart:before,
-  .heart:after {
-    position: absolute;
-    content: "";
-    left: 50px;
+header {
+    background-color: darkred;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+    position: sticky;
     top: 0;
-    width: 50px;
-    height: 80px;
-    background: red;
-    border-radius: 50px 50px 0 0;
-    transform: rotate(-45deg);
-    transform-origin: 0 100%;
-  }
-  .heart:after {
-    left: 0;
-    transform: rotate(45deg);
-    transform-origin: 100% 100%;
-  }
+    width: 100vw;
+    border-bottom: white 4px dotted;
+    z-index: 2;
+}
 
-img{
-    width: 380px;
+.header-text {
+    margin: 25px;
+    font-family: "old-claude-lp-expert", sans-serif;
+    font-size: 1.3rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: 0.4s ease;
+}
+
+a:hover {
+    letter-spacing: 2px;
+    color: lightgrey;
+}
+
+#main-page {
+    font-size: 2rem;
+    color: white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+main {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+    font-size: 8rem;
+    width: 1200px;
+    align-self: center;
+    text-align: center;
+    font-family: "fleur-display", sans-serif;
+    font-weight: normal;
+    margin: 30px 0;
+    letter-spacing: 2.5px;
+}
+
+footer {
+    height: 50px;
+    width: 100vw;
+    background-color: darkred;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: dotted white;
+    margin-top: 30px;
+}
+
+#my-name {
+    margin: 25px;
+    color: white;
+}
+
+#class-name {
+    color: white;
+    margin: 25px;
+}
+
+#entry-name {
+    color: white;
+    margin: 25px;
+}
+
+h2{
+    color: white;
+    font-family: "old-claude-lp-expert", sans-serif;
+    font-size: 4.5rem;
+    text-align: center;
+    margin: 0;
+}
+
+h3{
+   color: white;
+    font-family: "old-claude-lp-expert", sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0;
+}
+
+#text{
+    color: white;
+    text-align: left;
+    width: 800px;
 }
