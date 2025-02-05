@@ -25,12 +25,27 @@ let poemWordsEnglish = [
     "The nobodies,", "who are", "not worth", "the bullet", "that kills them."
 ]
 
+function shuffledUniqueNumbers( max ) {
+    let numbers = Array.from({ length: max }, (_, i) => i );
+    
+    // Algoritmo de Fisher-Yates para barajar el array
+    for (let i = numbers.length - 1; i > 0; i--) {
+        let j = Math.floor(Math.random() * (i + 1));
+        [numbers[i], numbers[j]] = [numbers[j], numbers[i]];
+    }
+    return numbers;
+}
+
 function translateRandomWord() {
     const totalWords = poemWordsEnglish.length;
-    const randomIndex = Math.floor(Math.random() * totalWords);
-    const wordElement = document.getElementById(`word${randomIndex}`);
-    
-    if (wordElement.innerHTML !== poemWordsEnglish[randomIndex]) {
+    let contador = 0;
+    let index_arr = shuffledUniqueNumbers( totalWords )
+    return function(){
+        if( contador >= totalWords ) 
+            return;
+        const randomIndex = index_arr[contador];
+        contador++;
+        const wordElement = document.getElementById(`word${randomIndex}`);
         wordElement.style.transition = "filter 0.5s";
         wordElement.style.filter = "blur(4px)";
         wordElement.style.color = "white"
@@ -38,9 +53,9 @@ function translateRandomWord() {
         setTimeout(() => {
             wordElement.innerHTML = poemWordsEnglish[randomIndex];
             wordElement.style.filter = "blur(0px)"; 
-      }, 200); 
+        }, 200);
     }
   }
   
-  setInterval(translateRandomWord, 700);
+  setInterval(translateRandomWord(), 700);
   
